@@ -63,6 +63,15 @@ export async function registerRoutes(
       linkText: "View Assets",
       isFeatured: true
     });
+    await storage.createProject({
+      title: "KYC Checklist",
+      description: "Comprehensive Know Your Customer compliance checklist with AI-driven assessment tools for banking risk evaluation.",
+      category: "kyc-checklist",
+      imageUrl: "/images/ai-brain.jpg",
+      linkUrl: "/kyc-checklist",
+      linkText: "View Checklist",
+      isFeatured: true
+    });
   }
 
   return httpServer;
