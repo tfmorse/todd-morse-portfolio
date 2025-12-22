@@ -2,6 +2,21 @@ import { z } from 'zod';
 import { insertProjectSchema, projects } from './schema';
 
 export const api = {
+  contact: {
+    get: {
+      method: 'GET' as const,
+      path: '/api/contact',
+      responses: {
+        200: z.object({
+          name: z.string(),
+          phone: z.string(),
+          email: z.string(),
+          title: z.string(),
+          specialty: z.string(),
+        }),
+      },
+    },
+  },
   projects: {
     list: {
       method: 'GET' as const,

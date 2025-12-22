@@ -2,6 +2,7 @@ import type { Express } from "express";
 import type { Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
+import { contactInfo } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(
@@ -9,6 +10,11 @@ export async function registerRoutes(
   app: Express
 ): Promise<Server> {
   
+  // Contact Info Route
+  app.get(api.contact.get.path, async (req, res) => {
+    res.json(contactInfo);
+  });
+
   // API Routes
   app.get(api.projects.list.path, async (req, res) => {
     const projects = await storage.getProjects();

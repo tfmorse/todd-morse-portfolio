@@ -18,3 +18,12 @@ export const insertProjectSchema = createInsertSchema(projects).omit({ id: true,
 
 export type Project = typeof projects.$inferSelect;
 export type InsertProject = z.infer<typeof insertProjectSchema>;
+
+// Contact Info
+export const contactInfo = {
+  name: "Todd F Morse",
+  phone: "904-910-5977",
+  email: "tfmorse@gmail.com",
+  title: "Instructional Designer & E-Learning Developer",
+  specialty: "Banking Risk & Compliance Specialist"
+};
