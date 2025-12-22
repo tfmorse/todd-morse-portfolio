@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructional Design Portfolio | 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #000b18;
+            --accent-cyan: #00e5ff;
+            --text-light: #e0f7fa;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            background-image: radial-gradient(circle at 80% 20%, #002b5e 0%, transparent 40%);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            background: linear-gradient(90deg, #fff, var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Project Card Styling */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+        }
+
+        .card h3 {
+            color: var(--accent-cyan);
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: transparent;
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: var(--accent-cyan);
+            color: var(--bg-dark);
+            box-shadow: 0 0 15px var(--accent-cyan);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="hero-title">AI-DRIVEN LEARNING SOLUTIONS</h1>
+        <p class="hero-subtitle">Bridging the gap between complex regulatory risk and high-performance training through interactive storytelling.</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div>
+                <h3>Articulate Storyline 360</h3>
+                <p><strong>The Science of Sleep:</strong> Exploring the impact of sleep deprivation on health through an immersive interactive experience.</p>
+            </div>
+            <a href="https://tfmorse.github.io/demo_3/" class="btn" target="_blank">Launch Module</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>Interactive JS Scenario</h3>
+                <p><strong>The Deepfake Deposit:</strong> A custom-coded HTML5/JS branching simulation on identifying AI-generated social engineering in banking.</p>
+            </div>
+            <a href="#" class="btn">Demo Coming Soon</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>Microlearning & Performance Support</h3>
+                <p>Modern compliance job aids and short-form video content designed for the 2025 regulatory landscape.</p>
+            </div>
+            <a href="#" class="btn">View Assets</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 | Instructional Designer & E-Learning Developer | Banking Risk & Compliance Specialist
+    </footer>
+
+</body>
+</html>
