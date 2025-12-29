@@ -78,6 +78,14 @@ export async function registerRoutes(
       linkText: "View Checklist",
       isFeatured: true
     });
+    await storage.createProject({
+      title: "HTML/CSS/JS Course",
+      description: "A comprehensive course on modern web development, covering the fundamentals of HTML, CSS, and JavaScript.",
+      category: "course",
+      linkUrl: "https://replit.com/@tfmorse/html-css-js-course", // Placeholder Replit link
+      linkText: "Launch Course",
+      isFeatured: true
+    });
   }
 
   return httpServer;
