@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Deepfake Deposit | Case Study</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .case-study-header {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem 2rem 2rem;
+        }
+
+        .breadcrumb {
+            color: #b8c5d6;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumb a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .design-brief {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 3rem;
+            max-width: 1000px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .project-type {
+            color: #00d9ff;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .design-brief h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .metadata-item {
+            background: rgba(0, 217, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #00d9ff;
+        }
+
+        .metadata-label {
+            font-size: 0.85rem;
+            color: #00d9ff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        .metadata-value {
+            font-size: 1.1rem;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin: 2.5rem 0 1.5rem 0;
+        }
+
+        .section-icon {
+            font-size: 1.75rem;
+        }
+
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.75rem;
+        }
+
+        .design-brief ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .design-brief li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+            color: #b8c5d6;
+            line-height: 1.7;
+        }
+
+        .design-brief li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #00d9ff;
+            font-weight: bold;
+        }
+
+        .callout {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid #00d9ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .callout-title {
+            color: #00d9ff;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .warning-callout {
+            background: rgba(255, 200, 0, 0.1);
+            border-left: 4px solid #ffc800;
+        }
+
+        .warning-callout .callout-title {
+            color: #ffc800;
+        }
+
+        .demo-note {
+            background: rgba(255, 200, 0, 0.15);
+            border: 2px solid #ffc800;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .demo-note h3 {
+            color: #ffc800;
+            margin-bottom: 1rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-buttons {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .screenshot-item {
+            background: rgba(0, 217, 255, 0.05);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .design-brief h1 {
+                font-size: 2rem;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="../index.html" class="logo">
+            <div class="logo-icon">TM</div>
+            <span>Todd Morse</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="mailto:tfmorse@gmail.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="case-study-header">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> / <a href="../index.html#projects">Projects</a> / The Deepfake Deposit
+        </div>
+    </div>
+
+    <!-- Design Brief -->
+    <div class="design-brief">
+        <div class="project-type">Custom JavaScript · High-Stakes Decision Making</div>
+        <h1>The Deepfake Deposit: Fraud Detection Under Pressure</h1>
+
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #b8c5d6;">
+            A custom-coded branching simulation designed to train bank tellers in fraud detection when facing deepfake technology. This scenario recreates the competing pressures of customer satisfaction metrics and fraud prevention, forcing learners to make judgment calls with incomplete information—just as they must in real-world banking operations.
+        </p>
+
+        <!-- Demo Note -->
+        <div class="demo-note">
+            <h3>📹 Interactive Demo Available</h3>
+            <p style="color: #b8c5d6; line-height: 1.7; margin: 0;">
+                This branching scenario demonstrates custom JavaScript development for complex decision trees. The full interactive version showcases real-time consequence feedback and progressive complexity across three scenarios. <strong>Contact me to arrange a demonstration.</strong>
+            </p>
+        </div>
+
+        <!-- Metadata -->
+        <div class="metadata-grid">
+            <div class="metadata-item">
+                <div class="metadata-label">Target Audience</div>
+                <div class="metadata-value">Front-Line Bank Tellers</div>
+            </div>
+            <div class="metadata-item">
+                <div class="metadata-label">Training Duration</div>
+                <div class="metadata-value">15-20 minutes</div>
+            </div>
+            <div class="metadata-item">
+                <div class="metadata-label">Scenario Complexity</div>
+                <div class="metadata-value">Progressive (3 Levels)</div>
+            </div>
+            <div class="metadata-item">
+                <div class="metadata-label">Development Approach</div>
+                <div class="metadata-value">Custom HTML5/JS</div>
+            </div>
+        </div>
+
+        <!-- Business Challenge -->
+        <div class="section-header">
+            <span class="section-icon">🎯</span>
+            <h2>Business Challenge</h2>
+        </div>
+        <p style="color: #b8c5d6; line-height: 1.8;">
+            A regional banking institution experienced a 35% increase in deepfake-related fraud attempts over six months. Front-line tellers were approving suspicious high-value transactions because customer satisfaction metrics incentivized quick approvals, while compliance protocols demanded scrutiny. This created a dangerous gap where speed was prioritized over fraud detection.
+        </p>
+
+        <div class="callout warning-callout">
+            <div class="callout-title">The Stakes:</div>
+            <p style="color: #b8c5d6; line-height: 1.7; margin: 0;">
+                Industry data shows a single successful deepfake wire transfer averages $180,000 in losses. When tellers can't distinguish legitimate transactions from sophisticated fraud attempts, the bank faces not just financial losses but regulatory scrutiny, customer trust erosion, and potential FDIC enforcement actions. Traditional "here's what fraud looks like" training failed because it didn't prepare tellers for the emotional and cognitive pressure of the actual moment.
+            </p>
+        </div>
+
+        <!-- Design Approach -->
+        <div class="section-header">
+            <span class="section-icon">🧠</span>
+            <h2>Design Approach</h2>
+        </div>
+        <p style="color: #b8c5d6; line-height: 1.8;">
+            Rather than teaching fraud indicators in isolation, this scenario <strong>recreates the context where fraud detection actually happens</strong>: with customers waiting, managers monitoring transaction velocity, and incomplete information forcing judgment calls under time pressure.
+        </p>
+
+        <ul>
+            <li><strong>Realistic pressure simulation:</strong> Transaction details mirror actual fraud cases from the bank's incident reports, including dollar amounts, client histories, and contextual red flags</li>
+            <li><strong>Competing priorities:</strong> Each scenario explicitly surfaces the tension between customer satisfaction scores and fraud prevention protocols</li>
+            <li><strong>Consequence-based feedback:</strong> Learners see the downstream impact on the customer, the bank, and regulatory standing—not just "correct" or "incorrect"</li>
+            <li><strong>Progressive complexity:</strong> Three scenarios increase in ambiguity, preventing learners from developing a single pattern-matching strategy</li>
+            <li><strong>No binary outcomes:</strong> Feedback explains why each decision carries specific risks, building conditional knowledge rather than memorized procedures</li>
+        </ul>
+
+        <!-- Scenario Flow -->
+        <div class="section-header">
+            <span class="section-icon">🔀</span>
+            <h2>Scenario Flow Example</h2>
+        </div>
+        <p style="color: #b8c5d6; line-height: 1.8; margin-bottom: 1rem;">
+            <strong>Scenario Setup:</strong> A high-value client, "Apex Global," requests a $450,000 wire transfer to the Cayman Islands. The authorization signature looks slightly different from the one on file. The client is in a hurry.
+        </p>
+
+        <div class="callout">
+            <div class="callout-title">Decision Point 1: Initial Response</div>
+            <ul style="margin: 0;">
+                <li><strong>Option A:</strong> Approve immediately (customer satisfaction priority)</li>
+                <li><strong>Option B:</strong> Call client to verify (balanced approach)</li>
+                <li><strong>Option C:</strong> Email verification request (delay but documented)</li>
+            </ul>
+        </div>
+
+        <p style="color: #b8c5d6; line-height: 1.8; margin: 1rem 0;">
+            Each choice branches to different consequences with additional decision points, ultimately showing outcomes ranging from fraud prevention success to significant financial losses and regulatory exposure.
+        </p>
+
+        <!-- Key Design Decisions -->
+        <div class="section-header">
+            <span class="section-icon">⚙️</span>
+            <h2>Key Design Decisions</h2>
+        </div>
+        <ul>
+            <li><strong>Judgment over memorization:</strong> No "right answer" labels—instead, feedback explains the risk profile of each choice and when that level of risk is acceptable</li>
+            <li><strong>Authentic contextual details:</strong> Dollar amounts ($450,000 wire to Cayman Islands), client names (Apex Global), and authorization discrepancies pulled from real fraud investigation files</li>
+            <li><strong>Visible trade-offs:</strong> When learners choose speed over scrutiny, consequences show both the immediate customer satisfaction benefit AND the potential fraud exposure</li>
+            <li><strong>Spaced decision points:</strong> Three distinct scenarios prevent pattern matching and force adaptive thinking as situational cues change</li>
+            <li><strong>Custom JavaScript development:</strong> Built outside authoring tools to support complex branching logic where previous scenario outcomes influence available options in subsequent scenarios</li>
+        </ul>
+
+        <!-- Learning Objectives -->
+        <div class="section-header">
+            <span class="section-icon">📚</span>
+            <h2>Learning Objectives</h2>
+        </div>
+        <p style="color: #b8c5d6; line-height: 1.8; margin-bottom: 1rem;">
+            Upon completion, learners will be able to:
+        </p>
+        <ul>
+            <li>Identify red flags indicating potential deepfake fraud (signature discrepancies, unusual transaction patterns, verification inconsistencies)</li>
+            <li>Apply appropriate verification protocols based on risk level without defaulting to blanket approval or denial</li>
+            <li>Balance customer satisfaction requirements with fraud prevention obligations in real-time decision-making</li>
+            <li>Escalate appropriately when risk indicators exceed their authority level or expertise</li>
+            <li>Recognize when "gut feeling" about a transaction warrants additional scrutiny despite pressure to process quickly</li>
+        </ul>
+
+        <!-- Why Custom JavaScript -->
+        <div class="section-header">
+            <span class="section-icon">🛠️</span>
+            <h2>Why Custom JavaScript Over Authoring Tools?</h2>
+        </div>
+        <div class="callout">
+            <div class="callout-title">Tool Selection Rationale:</div>
+            <p style="color: #b8c5d6; line-height: 1.7; margin: 0;">
+                Standard authoring tools struggled with three requirements: (1) Complex branching where early choices affected later scenario options, (2) Consequence screens that needed to dynamically generate based on multiple decision combinations, and (3) The need for custom UI elements that looked like actual banking software rather than generic e-learning templates. Building with JavaScript allowed precise control over state management, branching logic, and the ability to create an interface that reinforced immersion in the banking context rather than breaking it with typical course navigation elements.
+            </p>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="section-header">
+            <span class="section-icon">📊</span>
+            <h2>Hypothetical Success Metrics</h2>
+        </div>
+        <p style="color: #b8c5d6; line-height: 1.8; margin-bottom: 1rem;">
+            In a real implementation, effectiveness would be measured through:
+        </p>
+        <ul>
+            <li><strong>Level 3 (Behavior):</strong> Reduction in fraudulent transaction approvals and increase in appropriate escalations to compliance officers within 90 days</li>
+            <li><strong>Level 3 (Behavior):</strong> Time-to-detection improvement—how quickly tellers identify red flags during actual transactions</li>
+            <li><strong>Level 2 (Learning):</strong> Post-scenario assessment showing improved fraud indicator recognition and appropriate response selection</li>
+            <li><strong>Level 1 (Reaction):</strong> Self-reported confidence in handling ambiguous verification situations</li>
+            <li><strong>Level 4 (Results):</strong> Financial impact—reduction in fraud losses attributed to front-line detection improvements</li>
+        </ul>
+
+        <!-- Contact CTA -->
+        <div class="action-buttons">
+            <a href="mailto:tfmorse@gmail.com?subject=Deepfake%20Deposit%20Demo%20Request" class="btn btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                Request Demo
+            </a>
+
+            <a href="../index.html#projects" class="btn btn-outline">
+                ← Back to Projects
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation to Other Case Studies -->
+    <div class="nav-buttons">
+        <a href="ai-ethics.html" class="btn btn-secondary">
+            ← Previous: AI Ethics
+        </a>
+        <a href="../index.html#projects" class="btn btn-secondary">
+            All Projects →
+        </a>
+    </div>
+</body>
+</html>
